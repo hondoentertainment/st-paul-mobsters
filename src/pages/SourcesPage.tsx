@@ -3,9 +3,23 @@ import { PageMeta } from '../components/PageMeta'
 import { BibliographyRegistry } from '../components/BibliographyRegistry'
 import { Section } from '../components/Section'
 import { SourceList } from '../components/SourceList'
+import { TableOfContents } from '../components/TableOfContents'
 import { imageCredits, sources } from '../content/sources'
+import { slugify } from '../utils/slugify'
+
+const sourcesSectionTitles = [
+  'Approach',
+  'Master bibliography (citation registry)',
+  'Further reading (supplemental list)',
+  'Images',
+] as const
 
 export function SourcesPage() {
+  const tocItems = sourcesSectionTitles.map((title) => ({
+    href: `#${slugify(title)}`,
+    label: title,
+  }))
+
   return (
     <>
       <PageMeta
@@ -14,6 +28,7 @@ export function SourcesPage() {
         description="Master bibliography keyed to citation IDs, supplemental web and book list, full books-and-films library, and image credits for St. Paul History."
       />
       <h1 className="page-title">Sources &amp; bibliography</h1>
+      <TableOfContents items={tocItems} />
       <Section title="Approach">
         <p>
           This project summarizes widely taught themes in Minnesota and U.S. history. It avoids

@@ -13,8 +13,23 @@ import {
   libraryIntro,
   nonfictionBooks,
 } from '../content/referenceLibrary'
+import { TableOfContents } from '../components/TableOfContents'
+import { slugify } from '../utils/slugify'
+
+const libraryTocTitles = [
+  'How to use this list',
+  'Nonfiction books',
+  'Fiction & literature',
+  'Feature films',
+  'Documentary & television',
+] as const
 
 export function ReferenceLibraryPage() {
+  const tocItems = libraryTocTitles.map((title) => ({
+    href: `#${slugify(title)}`,
+    label: title,
+  }))
+
   return (
     <>
       <PageMeta
@@ -23,6 +38,7 @@ export function ReferenceLibraryPage() {
         description="Books and films on St. Paul, Twin Cities crime, Dillinger, Prohibition, and the public-enemy era—with relevance notes for researchers."
       />
       <h1 className="page-title">{libraryIntro.title}</h1>
+      <TableOfContents items={tocItems} />
       <p className="hero__lead" style={{ marginTop: 0 }}>
         {libraryIntro.lead.split('**').map((chunk, i) =>
           i % 2 === 1 ? (

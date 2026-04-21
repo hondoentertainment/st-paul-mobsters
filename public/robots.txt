@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://st-paul-mobsters.vercel.app/sitemap.xml

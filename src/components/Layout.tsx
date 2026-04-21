@@ -1,5 +1,6 @@
 import { Outlet, Link } from 'react-router-dom'
 import { Nav } from './Nav'
+import { CONTENT_REVIEW } from '../content/siteMeta'
 
 export function Layout() {
   return (
@@ -34,6 +35,15 @@ export function Layout() {
             <Link to="/research">Research hub</Link>
             {' · '}
             <Link to="/changelog">Changelog</Link>
+            {' · '}
+            <Link to="/editorial">Editorial</Link>
+            {' · '}
+            <Link to="/cite">Cite</Link>
+          </p>
+          <p className="site-footer__review">
+            Content last reviewed <time dateTime={CONTENT_REVIEW.lastReviewed}>{CONTENT_REVIEW.lastReviewed}</time>
+            {' · '}
+            {CONTENT_REVIEW.reviewer}
           </p>
         </div>
       </footer>

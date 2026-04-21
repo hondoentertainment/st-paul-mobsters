@@ -1,10 +1,22 @@
 import { Link } from 'react-router-dom'
 import { PageMeta } from '../components/PageMeta'
 import { Section } from '../components/Section'
+import { TableOfContents } from '../components/TableOfContents'
 import { Timeline } from '../components/Timeline'
 import { timeline } from '../content/timeline'
+import { slugify } from '../utils/slugify'
+
+const timelineToc = [
+  { title: 'St. Paul in time' },
+  { title: 'How to read this timeline' },
+] as const
 
 export function TimelinePage() {
+  const tocItems = timelineToc.map(({ title }) => ({
+    href: `#${slugify(title)}`,
+    label: title,
+  }))
+
   return (
     <>
       <PageMeta
@@ -13,6 +25,7 @@ export function TimelinePage() {
         description="Detailed chronology of St. Paul from the river landing through Prohibition, the public-enemy era, repeal, and modern heritage interpretation."
       />
       <h1 className="page-title">Timeline</h1>
+      <TableOfContents items={tocItems} />
       <p className="hero__lead" style={{ marginTop: 0, marginBottom: '1.5rem' }}>
         Below is an expanded narrative chronology—grouped by era—with extra detail on railroads,
         capital politics, Chief O’Connor’s reputation, Prohibition economics, the Bremer case, and

@@ -6,7 +6,11 @@ type FigureCardProps = {
 
 export function FigureCard({ figure }: FigureCardProps) {
   return (
-    <article className="figure-card" aria-labelledby={`figure-${figure.id}`}>
+    <article
+      className="figure-card"
+      id={`profile-${figure.id}`}
+      aria-labelledby={`figure-${figure.id}`}
+    >
       <span className="figure-card__tag">{figure.role}</span>
       <h3 className="figure-card__name" id={`figure-${figure.id}`}>
         {figure.name}

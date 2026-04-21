@@ -1,8 +1,7 @@
 import { PageMeta } from '../components/PageMeta'
 import { Section } from '../components/Section'
-import { FigureCard } from '../components/FigureCard'
-import { figures } from '../content/people'
-
+import { FigureDirectory } from '../components/FigureDirectory'
+import { TableOfContents } from '../components/TableOfContents'
 export function FiguresPage() {
   return (
     <>
@@ -12,6 +11,13 @@ export function FiguresPage() {
         description="Profiles of lawmen, politicians, Twin Cities operators, and Midwest outlaws (Dillinger circle, Barkers, Kellys, Floyd)—with St. Paul or Minnesota context where documented."
       />
       <h1 className="page-title">Figures of the era</h1>
+      <TableOfContents
+        items={[
+          { href: '#reading-these-profiles', label: 'Reading these profiles' },
+          { href: '#people-and-cases', label: 'People and cases' },
+          { href: '#figure-directory', label: 'Filter and browse' },
+        ]}
+      />
       <Section title="Reading these profiles">
         <p>
           Twenty-six individuals below span governors, journalists, federal agents,
@@ -23,9 +29,7 @@ export function FiguresPage() {
         </p>
       </Section>
       <Section title="People and cases" prose={false}>
-        {figures.map((f) => (
-          <FigureCard key={f.id} figure={f} />
-        ))}
+        <FigureDirectory />
       </Section>
     </>
   )

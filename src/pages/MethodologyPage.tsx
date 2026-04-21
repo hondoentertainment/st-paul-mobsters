@@ -1,8 +1,15 @@
 import { PageMeta } from '../components/PageMeta'
 import { Section } from '../components/Section'
+import { TableOfContents } from '../components/TableOfContents'
 import { methodologyIntro, methodologySections } from '../content/methodologyContent'
+import { slugify } from '../utils/slugify'
 
 export function MethodologyPage() {
+  const tocItems = methodologySections.map((sec) => ({
+    href: `#${slugify(sec.title)}`,
+    label: sec.title,
+  }))
+
   return (
     <>
       <PageMeta
@@ -14,6 +21,7 @@ export function MethodologyPage() {
       <p className="hero__lead" style={{ marginTop: 0 }}>
         {methodologyIntro.lead}
       </p>
+      <TableOfContents items={tocItems} />
       {methodologySections.map((sec) => (
         <Section key={sec.title} title={sec.title}>
           {sec.paragraphs.map((p, i) => (

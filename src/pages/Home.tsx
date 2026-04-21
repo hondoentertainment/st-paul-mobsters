@@ -28,7 +28,8 @@ export function Home() {
           Use the <Link to="/research">Research hub</Link> for methodology, historiography, direct
           links to <Link to="/primary-sources">newspaper archives</Link>, the{' '}
           <Link to="/library">books &amp; films library</Link>, and the{' '}
-          <Link to="/license">CC BY-SA</Link> license. Footnoted pages:{' '}
+          <Link to="/license">CC BY-SA</Link> license and{' '}
+          <Link to="/cite">citation format</Link>. Footnoted pages:{' '}
           <Link to="/prohibition">Prohibition</Link> and <Link to="/mobsters">Mobsters</Link>.
         </p>
       </aside>

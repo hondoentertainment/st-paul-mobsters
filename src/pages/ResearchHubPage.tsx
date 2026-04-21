@@ -4,6 +4,16 @@ import { siteAttribution } from '../content/citingThisSite'
 
 const tools = [
   {
+    to: '/editorial',
+    title: 'Editorial standards',
+    blurb: 'Evidence tiers, corrections policy, and how dramatic works relate to historical sources.',
+  },
+  {
+    to: '/cite',
+    title: 'How to cite',
+    blurb: 'Canonical URLs, retrieval dates, license line, and suggested citation strings.',
+  },
+  {
     to: '/methodology',
     title: 'Methodology',
     blurb: 'Evidence standards, primary vs secondary sources, ethics, and how to cite this site.',

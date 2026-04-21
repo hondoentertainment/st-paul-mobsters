@@ -15,6 +15,8 @@ import { PrimarySourcesPage } from './pages/PrimarySourcesPage'
 import { ChangelogPage } from './pages/ChangelogPage'
 import { LicensePage } from './pages/LicensePage'
 import { ReferenceLibraryPage } from './pages/ReferenceLibraryPage'
+import { EditorialPage } from './pages/EditorialPage'
+import { CitePage } from './pages/CitePage'
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
         <Route path="/primary-sources" element={<PrimarySourcesPage />} />
         <Route path="/changelog" element={<ChangelogPage />} />
         <Route path="/license" element={<LicensePage />} />
+        <Route path="/editorial" element={<EditorialPage />} />
+        <Route path="/cite" element={<CitePage />} />
         <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/prohibition" element={<ProhibitionPage />} />
         <Route path="/mobsters" element={<MobstersPage />} />
