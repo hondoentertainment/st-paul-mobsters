@@ -18,6 +18,18 @@ export const glossaryEntries: GlossaryEntry[] = [
       'Early 1930s media and law-enforcement label for high-profile fugitives; not a formal legal status. Useful for period flavor; verify facts case by case.',
   },
   {
+    slug: 'midwest-outlaws',
+    term: 'Midwest outlaws (1930s usage)',
+    definition:
+      'Journalistic and later scholarly shorthand for bank robbers, kidnappers, and gunmen who used cars and state-line jumps across the Great Lakes and Mississippi Valley. Not an organized “Midwest mafia”—membership shifted and newspapers exaggerated coordination.',
+  },
+  {
+    slug: 'interstate-banditry',
+    term: 'Interstate banditry',
+    definition:
+      'Federal and state prosecutors framed many Depression-era charges around crossing state lines with stolen cars or ransom money—jurisdiction that helped the young FBI insert itself into local cases.',
+  },
+  {
     slug: 'layover',
     term: 'Layover (St. Paul usage)',
     definition:

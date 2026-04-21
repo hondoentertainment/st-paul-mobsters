@@ -11,7 +11,7 @@ export function HistoriographyPage() {
       <PageMeta
         path="/historiography"
         title={historiographyIntro.title}
-        description="How historians interpret St. Paul’s O’Connor / open-city story, FBI narratives, Ma Barker, and the Bremer kidnapping."
+        description="Historiography: O’Connor / open city, FBI narratives, Ma Barker, Bremer kidnapping, and Midwest outlaw network scholarship (Burrough vs. local sources)."
       />
       <h1 className="page-title">{historiographyIntro.title}</h1>
       <p className="hero__lead" style={{ marginTop: 0 }}>

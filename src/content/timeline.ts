@@ -189,6 +189,15 @@ export const timeline: TimelineEntry[] = [
   },
   {
     type: 'event',
+    year: '1934 (Nov 27)',
+    title: '“Baby Face” Nelson killed (Barrington, Illinois)',
+    body: 'Lester Gillis—known as “Baby Face” Nelson—died after a gun battle with federal agents in northern Illinois. He had moved through the same Great Lakes bank-robbery milieu as Dillinger associates; national press tied many Midwest outlaws into one sensational story even when coordination was loose.',
+    bullets: [
+      'Useful reminder that “Midwest outlaw” networks were often a patchwork of crews and safe houses rather than one syndicate.',
+    ],
+  },
+  {
+    type: 'event',
     year: '1934–1936',
     title: 'Barker–Karpis aftermath',
     body: 'Alvin Karpis and associates remained targets of federal pursuit; the Barker family’s end at Florida in 1935 became part of Bureau lore. Ma Barker’s role was later debated—some historians see FBI mythmaking at work.',

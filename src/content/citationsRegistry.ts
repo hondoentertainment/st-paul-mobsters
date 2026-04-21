@@ -22,6 +22,8 @@ export type CitationId =
   | 'bremer-case-secondary'
   | 'native-gov-treaty-context'
   | 'mnhs-immigration-overview'
+  | 'burrough-public-enemies'
+  | 'midwest-outlaw-networks'
 
 export type CitationRecord = {
   /** Short label for footnote line */
@@ -139,6 +141,16 @@ export const CITATIONS: Record<CitationId, CitationRecord> = {
     full:
       'Minnesota Historical Society resources on immigration and neighborhood formation; saloon culture and enforcement landed differently across ethnic and class lines.',
     url: 'https://www.mnopedia.org/',
+  },
+  'burrough-public-enemies': {
+    short: 'Bryan Burrough, Public Enemies (2004)',
+    full:
+      'Bryan Burrough, Public Enemies: America’s Greatest Crime Wave and the Birth of the FBI, 1933–34 (New York: Penguin Press, 2004). National synthesis of Depression-era interstate bank robberies, kidnappings, and Bureau expansion—useful for placing Midwest outlaws in a single narrative frame; verify particulars in primary sources.',
+  },
+  'midwest-outlaw-networks': {
+    short: 'Scholarship on Midwest interstate banditry (1930s)',
+    full:
+      'Historians describe roving bank- and payroll-robbery groups that used fast cars, state-line jumps, and corrupt safe houses from the Ohio Valley to the upper Mississippi. Membership shifted; newspaper “gang” labels did not always match conspiracy charges in court. St. Paul is one node in this geography, not the exclusive headquarters of a single organization.',
   },
 }
 

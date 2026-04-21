@@ -58,6 +58,31 @@ export const mobstersSections: { title: string; paragraphs: CitedParagraph[] }[]
     ],
   },
   {
+    title: 'Midwest outlaws and interstate circuits',
+    paragraphs: [
+      {
+        text:
+          'Depression-era “public enemies” are best understood as part of Midwest and Great Lakes fugitive geography: stolen cars, quick border crossings, and overlapping circles of drivers, doctors, and fences—not a single cartel with one address. Names such as Dillinger, “Baby Face” Nelson, Pretty Boy Floyd, and the Barker–Karpis associates appear in the same years of wire stories and FBI bulletins, even when they did not plan jobs together.',
+        citationIds: [
+          'burrough-public-enemies',
+          'midwest-outlaw-networks',
+          'maccabee-dillinger-slept-here',
+        ],
+        strength: 'scholarly-consensus',
+      },
+      {
+        text:
+          'Chicago often served as a logistics and press hub; Ohio, Indiana, Wisconsin, Iowa, and Missouri appear repeatedly in indictment narratives. St. Paul’s layover reputation, in this light, was one sanctuary option on a map of many—distinct from owning the whole Midwest racket.',
+        citationIds: [
+          'burrough-public-enemies',
+          'scholarly-mob-city-debate',
+          'contemporary-press-stpaul',
+        ],
+        strength: 'mixed-evidence',
+      },
+    ],
+  },
+  {
     title: 'Federal pressure and changing reputations',
     paragraphs: [
       {

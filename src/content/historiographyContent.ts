@@ -19,6 +19,13 @@ export const historiographySections: { title: string; paragraphs: string[] }[] =
     ],
   },
   {
+    title: 'Midwest outlaw networks: one map, many stories',
+    paragraphs: [
+      'Synthetic works such as Bryan Burrough’s Public Enemies describe a single “crime wave” linking figures who may have met rarely—Dillinger, Floyd, Nelson, the Barker–Karpis circle—across Ohio, Indiana, Illinois, Wisconsin, and Minnesota. The narrative power is real; the organizational unity is often overstated in hindsight.',
+      'Local studies (for example Maccabee on St. Paul) show how a sanctuary reputation could coexist with federal trials and kidnapping cases that finally eroded police tolerance. Compare national synthesis to dated newspapers when writing who knew whom on which week.',
+    ],
+  },
+  {
     title: 'Ma Barker and women in gang lore',
     paragraphs: [
       'FBI portrayals of Kate “Ma” Barker as a criminal mastermind have been questioned; some historians describe her as a marginal figure mythologized after death. Treat gendered gangster tropes skeptically and check trial transcripts and wiretap-era evidence where available.',

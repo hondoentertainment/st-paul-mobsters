@@ -40,6 +40,14 @@ export const sources: Source[] = [
     note: 'Widely cited popular history of St. Paul’s gangster-era corruption and violence.',
   },
   {
+    id: 'burrough-supplemental',
+    kind: 'book',
+    title:
+      'Public Enemies: America’s Greatest Crime Wave and the Birth of the FBI, 1933–34',
+    authors: ['Bryan Burrough'],
+    note: 'National synthesis linking Midwest bank robberies, kidnappings, and early FBI expansion—pair with local St. Paul sources.',
+  },
+  {
     id: 'encyclopedia',
     kind: 'article',
     title: 'Minnesota Encyclopedia and MNopedia entries',

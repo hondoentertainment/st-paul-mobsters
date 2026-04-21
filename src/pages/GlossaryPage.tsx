@@ -7,7 +7,7 @@ export function GlossaryPage() {
       <PageMeta
         path="/glossary"
         title="Glossary"
-        description="Definitions: Volstead Act, layover, Chronicling America, Minnesota Digital Newspaper Hub, Sanborn maps, public enemy."
+        description="Definitions: Volstead Act, layover, Midwest outlaws, interstate banditry, Chronicling America, MDNH, Sanborn maps, public enemy."
       />
       <h1 className="page-title">Glossary</h1>
       <p className="hero__lead" style={{ marginTop: 0 }}>

@@ -29,7 +29,7 @@ export const homeCards: HomeCard[] = [
   {
     to: '/figures',
     title: 'Figures',
-    blurb: 'Select people and cases—without turning myth into certainty.',
+    blurb: '26 profiles: governors, G-men, Twin Cities operators, Dillinger-era outlaws, Barkers, and more.',
   },
   {
     to: '/places',

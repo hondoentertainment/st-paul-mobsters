@@ -18,6 +18,8 @@ export const changelog: ChangelogEntry[] = [
       'Replaced informal book placeholder with Paul Maccabee’s John Dillinger Slept Here in the bibliography.',
       'Added /library: full books-and-films reference list with relevance tags (nonfiction, fiction, features, documentary & TV).',
       'Expanded /timeline with era dividers, many more dated events, optional bullet notes, and corrected 1881 capitol-fire context.',
+      'Added Midwest outlaw context: footnoted Mobsters section, new citation IDs (Burrough, interstate banditry), glossary entries, historiography section, Nelson timeline + figure, Nickel & Helmer in /library.',
+      'Expanded /figures to 26 profiles (20 new): Olson, Hoover, Purvis, Liggett, Gleckman, Kid Cann, Dillinger circle associates, Kellys, Floyd, Barkers, and others.',
     ],
   },
 ]

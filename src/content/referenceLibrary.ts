@@ -43,7 +43,7 @@ export type LibraryFilm = {
 export const libraryIntro = {
   title: 'Books & films reference library',
   lead:
-    'Use this list to build reading and viewing bibliographies for scripts, novels, and syllabi. **Nonfiction** supports fact-checking when paired with primary sources; **fiction and drama** are cultural sources—use them for tone and mythography, not as proof of events.',
+    'Use this list to build reading and viewing bibliographies for scripts, novels, and syllabi—especially on **St. Paul**, the **Twin Cities**, and **Midwest outlaws** (Dillinger-era bank robbers, kidnappers, and FBI “public enemies” who crossed state lines). **Nonfiction** supports fact-checking when paired with primary sources; **fiction and drama** are cultural sources—use them for tone and mythography, not as proof of events.',
 }
 
 export function formatBookCitation(b: LibraryBook): string {
@@ -99,6 +99,18 @@ export const nonfictionBooks: LibraryBook[] = [
     tie: 'strong',
     annotation:
       'Synthetic narrative of Depression-era robberies and Bureau politics; basis for the 2009 film—verify details against primary sources.',
+  },
+  {
+    id: 'nickel-helmer-baby-face',
+    authors: ['Steven Nickel', 'William J. Helmer'],
+    title: 'Baby Face Nelson: Portrait of a Public Enemy',
+    year: 2002,
+    publisher: 'Cumberland House Publishing',
+    place: 'Nashville, TN',
+    isbn: '978-1-58182-272-4',
+    tie: 'strong',
+    annotation:
+      'Biography of Illinois-centered outlaw Lester Gillis; connects Nelson to Dillinger-era crews and FBI files—useful Midwest counterpoint to Twin Cities–only narratives.',
   },
   {
     id: 'toland-dillinger-days',
