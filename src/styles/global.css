@@ -311,6 +311,44 @@ p {
   font-family: var(--font-display);
   font-size: 1.1rem;
   margin: 0 0 0.35rem;
+  font-weight: 600;
+}
+
+.timeline__body {
+  margin: 0 0 0.75rem;
+}
+
+.timeline__bullets {
+  margin: 0 0 0.5rem 1.1rem;
+  padding: 0;
+  font-size: 0.98rem;
+  color: var(--color-ink-muted);
+}
+
+.timeline__bullets li {
+  margin-bottom: 0.35rem;
+}
+
+.timeline__divider {
+  position: relative;
+  padding: 1.75rem 0 0.75rem 0.25rem;
+  list-style: none;
+}
+
+.timeline__divider:first-child {
+  padding-top: 0;
+}
+
+.timeline__era {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin: 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(184, 134, 11, 0.4);
+  max-width: 42rem;
 }
 
 .figure-card {

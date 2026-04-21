@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { PageMeta } from '../components/PageMeta'
 import { Section } from '../components/Section'
 import { Timeline } from '../components/Timeline'
@@ -9,18 +10,26 @@ export function TimelinePage() {
       <PageMeta
         path="/timeline"
         title="Timeline"
-        description="St. Paul from settlement through Prohibition and the gangster-era federal response—broad eras with links to footnoted deep dives."
+        description="Detailed chronology of St. Paul from the river landing through Prohibition, the public-enemy era, repeal, and modern heritage interpretation."
       />
       <h1 className="page-title">Timeline</h1>
+      <p className="hero__lead" style={{ marginTop: 0, marginBottom: '1.5rem' }}>
+        Below is an expanded narrative chronology—grouped by era—with extra detail on railroads,
+        capital politics, Chief O’Connor’s reputation, Prohibition economics, the Bremer case, and
+        federal “public enemy” politics. For footnoted narrative and citations, use the{' '}
+        <Link to="/prohibition">Prohibition</Link> and <Link to="/mobsters">Mobsters</Link> pages;
+        for books and films, see the <Link to="/library">reference library</Link>.
+      </p>
       <Section title="St. Paul in time" prose={false}>
         <Timeline entries={timeline} />
       </Section>
       <Section title="How to read this timeline">
         <p>
-          Dates summarize broad eras. The Prohibition and gangster sections
-          overlap nationally: bootlegging networks existed before Dillinger’s
-          headline robberies, and federal enforcement intensified across the
-          Midwest—not only in one neighborhood or police precinct.
+          Entries summarize themes that often stretch across years; where a single calendar date
+          matters for your script or paper, confirm it in{' '}
+          <Link to="/primary-sources">newspapers</Link> or court files. The Prohibition and gangster
+          periods overlap nationally: bootlegging preceded headline bank robberies, and federal
+          enforcement intensified across several states at once—not only in one precinct.
         </p>
       </Section>
     </>

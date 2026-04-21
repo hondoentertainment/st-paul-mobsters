@@ -14,7 +14,7 @@ export const homeCards: HomeCard[] = [
   {
     to: '/timeline',
     title: 'Timeline',
-    blurb: 'From river town to capital city—and through Prohibition and the gangster-era headlines.',
+    blurb: 'Era-by-era chronology: rails, capitol politics, O’Connor, Prohibition, Bremer, Dillinger, repeal, and modern heritage.',
   },
   {
     to: '/prohibition',

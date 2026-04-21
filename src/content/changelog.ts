@@ -17,6 +17,7 @@ export const changelog: ChangelogEntry[] = [
       'Added print-friendly CSS and master bibliography aligned to citation keys.',
       'Replaced informal book placeholder with Paul Maccabee’s John Dillinger Slept Here in the bibliography.',
       'Added /library: full books-and-films reference list with relevance tags (nonfiction, fiction, features, documentary & TV).',
+      'Expanded /timeline with era dividers, many more dated events, optional bullet notes, and corrected 1881 capitol-fire context.',
     ],
   },
 ]
