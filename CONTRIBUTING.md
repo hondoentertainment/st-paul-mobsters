@@ -10,10 +10,19 @@ Substantive historical or factual claims must cite credible primary or secondary
 
 ## Before you submit
 
-Run:
+Run (same checks as GitHub Actions):
 
 ```bash
-npm run build && npm run lint
+npm run verify:citations && npm run build && npm run lint
 ```
 
-Fix any build or lint failures before requesting review.
+Fix any failures before requesting review.
+
+### CI on GitHub
+
+This repo includes `.github/workflows/ci.yml`. If workflows do not run after push:
+
+1. On GitHub: **Settings → Actions → General** (for the repository).
+2. Under **Actions permissions**, choose **Allow all actions and reusable workflows** (or your org’s approved policy).
+3. Confirm **Actions** is enabled for the repo (not “Disable actions”).
+4. You can also run CI manually: **Actions** tab → **CI** → **Run workflow**.
