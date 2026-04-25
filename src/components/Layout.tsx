@@ -4,7 +4,7 @@ import { CONTENT_REVIEW } from '../content/siteMeta'
 
 export function Layout() {
   return (
-    <>
+    <div className="site-root">
       <a
         href="#main-content"
         className="skip-link"
@@ -47,6 +47,6 @@ export function Layout() {
           </p>
         </div>
       </footer>
-    </>
+    </div>
   )
 }
