@@ -1,3 +1,4 @@
+import { BibliographyCopyTools } from './BibliographyCopyTools'
 import { BIBLIOGRAPHY_ORDER, CITATIONS } from '../content/citationsRegistry'
 
 export function BibliographyRegistry() {
@@ -8,6 +9,9 @@ export function BibliographyRegistry() {
         return (
           <li key={id} id={`cite-${id}`}>
             <strong>{rec.short}</strong>
+            {rec.editionNote ? (
+              <span className="bibliography-registry__edition"> {rec.editionNote}</span>
+            ) : null}
             <span className="footnote-full"> {rec.full}</span>
             {rec.url ? (
               <>
@@ -22,6 +26,7 @@ export function BibliographyRegistry() {
                 <strong>Finding detail:</strong> {rec.howToLocate}
               </p>
             ) : null}
+            <BibliographyCopyTools id={id} rec={rec} />
           </li>
         )
       })}

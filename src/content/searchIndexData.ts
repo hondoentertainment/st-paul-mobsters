@@ -1,6 +1,8 @@
 /**
- * Curated full-text chunks for site search (MiniSearch). Expand when adding routes or major topics.
+ * MiniSearch index: curated route topics plus every CitationId row (short + full + locate + id).
  */
+import { CITATIONS, type CitationId } from './citationsRegistry'
+
 export type SearchChunk = {
   id: string
   path: string
@@ -8,7 +10,7 @@ export type SearchChunk = {
   text: string
 }
 
-export const SEARCH_CHUNKS: SearchChunk[] = [
+const BASE_SEARCH_CHUNKS: SearchChunk[] = [
   {
     id: 'home',
     path: '/',
@@ -21,7 +23,7 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
     path: '/research',
     title: 'Research hub',
     text:
-      'Methodology historiography glossary primary sources bibliography license writers producers teachers film television publishing',
+      'Methodology historiography glossary primary sources bibliography license writers producers teachers film television publishing exemplars lookup',
   },
   {
     id: 'methodology',
@@ -52,6 +54,13 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
       'Minnesota Digital Newspaper Hub MDNH Chronicling America MNHS Gale Family Library Sanborn FBI Constitution amendments workflow Bremer Dillinger O’Connor research paths',
   },
   {
+    id: 'exemplars',
+    path: '/exemplars',
+    title: 'Research exemplars',
+    text:
+      'Verification workflow Bremer kidnapping 1932 newspapers O’Connor open city police tolerance research packet',
+  },
+  {
     id: 'changelog',
     path: '/changelog',
     title: 'Changelog',
@@ -77,13 +86,19 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
     path: '/cite',
     title: 'How to cite this site',
     text:
-      'Canonical URL retrieval date license bibliography anchors cite-fragment Mobsters Prohibition Historiography',
+      'Canonical URL retrieval date license bibliography anchors cite-fragment Mobsters Prohibition Historiography lookup CitationId',
+  },
+  {
+    id: 'lookup-help',
+    path: '/lookup',
+    title: 'Citation lookup',
+    text: 'CitationId registry bibliography redirect sources cite-',
   },
   {
     id: 'search',
     path: '/search',
     title: 'Search',
-    text: 'Full text search find pages topics',
+    text: 'Full text search find pages topics CitationId',
   },
   {
     id: 'timeline',
@@ -104,7 +119,7 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
     path: '/mobsters',
     title: 'Mobsters and O’Connor system',
     text:
-      'John O’Connor layover open city police tolerance John Dillinger Baby Face Nelson Barker Karpis Bremer kidnapping Midwest outlaws footnotes mixed evidence',
+      'John O’Connor layover open city police tolerance John Dillinger Baby Face Nelson Barker Karpis Bremer kidnapping Midwest outlaws footnotes mixed evidence claim evidence table',
   },
   {
     id: 'figures',
@@ -125,7 +140,7 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
     path: '/sources',
     title: 'Sources & bibliography',
     text:
-      'Citation registry CitationId bibliography Maccabee Okrent MNopedia Chronicling America FBI Burrough image credits master list',
+      'Citation registry CitationId bibliography Maccabee Okrent MNopedia Chronicling America FBI Burrough image credits master list copy BibTeX',
   },
   {
     id: 'library',
@@ -135,3 +150,18 @@ export const SEARCH_CHUNKS: SearchChunk[] = [
       'Nonfiction fiction feature films documentary television Dillinger St. Paul relevance tags ISBN',
   },
 ]
+
+const fromRegistry: SearchChunk[] = (Object.keys(CITATIONS) as CitationId[]).map((id) => {
+  const rec = CITATIONS[id]
+  const text = [id, rec.short, rec.full, rec.howToLocate ?? '', rec.editionNote ?? '']
+    .filter(Boolean)
+    .join(' ')
+  return {
+    id: `reg-${id}`,
+    path: `/sources#cite-${id}`,
+    title: rec.short,
+    text,
+  }
+})
+
+export const SEARCH_CHUNKS: SearchChunk[] = [...BASE_SEARCH_CHUNKS, ...fromRegistry]

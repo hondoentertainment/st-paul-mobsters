@@ -33,6 +33,8 @@ export type CitationRecord = {
   url?: string
   /** How to locate a passage, edition detail, or search strategy for verification */
   howToLocate?: string
+  /** Edition or imprint consulted when it affects claims (optional) */
+  editionNote?: string
 }
 
 export const CITATIONS: Record<CitationId, CitationRecord> = {
@@ -72,6 +74,7 @@ export const CITATIONS: Record<CitationId, CitationRecord> = {
     short: 'Paul Maccabee, John Dillinger Slept Here (1995, rev. ed. later)',
     full:
       'Paul Maccabee, John Dillinger Slept Here: A Crooks’ Tour of Crime and Corruption in St. Paul, 1920–1936 (St. Paul: Minnesota Historical Society Press). Widely used popular history; compare claims with primary sources.',
+    editionNote: '(Site treats the MNHS Press imprint as the standard reference; cite the edition you hold.)',
     howToLocate:
       'Use the index for names and streets, then verify each key fact in MN digitized papers; note edition (1995 vs later revisions) in your citation.',
   },
@@ -79,6 +82,7 @@ export const CITATIONS: Record<CitationId, CitationRecord> = {
     short: 'Daniel Okrent, Last Call: The Rise and Fall of Prohibition',
     full:
       'Daniel Okrent, Last Call: The Rise and Fall of Prohibition (New York: Scribner, 2010). National synthesis of Volstead enforcement and social impact.',
+    editionNote: '(First Scribner hardcover, 2010—cite your imprint and page.)',
     howToLocate:
       'Cite chapter and page for national claims; for Minnesota-specific assertions, treat Okrent as orientation and confirm in MNopedia or newspapers.',
   },
@@ -186,6 +190,7 @@ export const CITATIONS: Record<CitationId, CitationRecord> = {
     short: 'Bryan Burrough, Public Enemies (2004)',
     full:
       'Bryan Burrough, Public Enemies: America’s Greatest Crime Wave and the Birth of the FBI, 1933–34 (New York: Penguin Press, 2004). National synthesis of Depression-era interstate bank robberies, kidnappings, and Bureau expansion—useful for placing Midwest outlaws in a single narrative frame; verify particulars in primary sources.',
+    editionNote: '(Penguin Press, 2004—later paperback pagination differs.)',
     howToLocate:
       'Cite chapter and page; for any Minnesota scene, confirm the same week in MDNH before treating Burrough’s timeline as local fact.',
   },

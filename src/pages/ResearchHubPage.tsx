@@ -9,6 +9,16 @@ const tools = [
     blurb: 'MiniSearch over curated page topics and keywords (expand searchIndexData as the site grows).',
   },
   {
+    to: '/lookup',
+    title: 'Citation lookup',
+    blurb: 'Jump to a bibliography row with ?id=CitationId (stable fragment on Sources).',
+  },
+  {
+    to: '/exemplars',
+    title: 'Research exemplars',
+    blurb: 'Verification workflows for Bremer press work and O’Connor-era tolerance research.',
+  },
+  {
     to: '/editorial',
     title: 'Editorial standards',
     blurb: 'Evidence tiers, corrections policy, and how dramatic works relate to historical sources.',

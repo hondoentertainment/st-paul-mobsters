@@ -18,6 +18,8 @@ import { ReferenceLibraryPage } from './pages/ReferenceLibraryPage'
 import { EditorialPage } from './pages/EditorialPage'
 import { CitePage } from './pages/CitePage'
 import { SearchPage } from './pages/SearchPage'
+import { CitationLookupPage } from './pages/CitationLookupPage'
+import { ExemplarsPage } from './pages/ExemplarsPage'
 
 export default function App() {
   return (
@@ -34,6 +36,8 @@ export default function App() {
         <Route path="/editorial" element={<EditorialPage />} />
         <Route path="/cite" element={<CitePage />} />
         <Route path="/search" element={<SearchPage />} />
+        <Route path="/lookup" element={<CitationLookupPage />} />
+        <Route path="/exemplars" element={<ExemplarsPage />} />
         <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/prohibition" element={<ProhibitionPage />} />
         <Route path="/mobsters" element={<MobstersPage />} />

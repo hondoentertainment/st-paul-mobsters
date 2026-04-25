@@ -1,0 +1,53 @@
+name: Content correction
+description: Report inaccurate or unsupported claims so editors can verify and update the site.
+title: "[Correction]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form when something on the site should be corrected or clarified. Please include a **citable source** so the change can be verified.
+
+  - type: input
+    id: page-url
+    attributes:
+      label: Page URL
+      description: Full URL of the page on this site where the issue appears.
+      placeholder: https://…
+    validations:
+      required: true
+
+  - type: textarea
+    id: quoted-claim
+    attributes:
+      label: Exact quoted claim or section
+      description: Copy the exact wording from the page (or describe the section heading and location) so editors can find it quickly.
+      placeholder: Paste the sentence or paragraph as it appears on the site…
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-correction
+    attributes:
+      label: Proposed correction or evidence summary
+      description: What should it say instead, or what does the evidence show? Be as specific as possible.
+      placeholder: Explain the correction or summarize the supporting evidence…
+    validations:
+      required: true
+
+  - type: textarea
+    id: citable-source
+    attributes:
+      label: Citable source
+      description: Author and/or title, publication or collection date if known, and a stable link (page URL, book page, or archive.org link).
+      placeholder: e.g. Author, Title, 1924, https://… or https://web.archive.org/…
+    validations:
+      required: true
+
+  - type: input
+    id: citation-id
+    attributes:
+      label: CitationId (optional)
+      description: If the site shows a citation or source id, enter it here to speed up matching.
+      placeholder: e.g. citation slug or id from the UI
+    validations:
+      required: false

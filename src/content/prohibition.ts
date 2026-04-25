@@ -28,8 +28,12 @@ export const prohibitionSections: {
       },
       {
         text:
-          'St. Paul, like other industrial cities, had saloon culture, ethnic neighborhoods with their own drinking traditions, and a busy port-and-rail economy. Those social and economic networks did not disappear overnight—they were driven underground.',
-        citationIds: ['mnopedia-stpaul-overview', 'mnhs-immigration-overview'],
+          'St. Paul, like other industrial cities, had saloon culture, ethnic neighborhoods with their own drinking traditions, and a busy port-and-rail economy. The city sits on land ceded through U.S.–Dakota treaties—tribal and federal treaty resources help situate that history alongside saloons and wards. Those social and economic networks did not disappear overnight—they were driven underground.',
+        citationIds: [
+          'mnopedia-stpaul-overview',
+          'mnhs-immigration-overview',
+          'native-gov-treaty-context',
+        ],
         strength: 'scholarly-consensus',
       },
     ],
@@ -57,7 +61,11 @@ export const prohibitionSections: {
       {
         text:
           'Federal Prohibition agents, local police, and reform-minded citizens raided stills and speakeasies. Still, enforcement was uneven. Juries sometimes refused to convict; penalties were politicized; and underfunded agencies struggled with geography and corruption.',
-        citationIds: ['okrent-last-call-prohibition', 'chronicling-america-hub'],
+        citationIds: [
+          'okrent-last-call-prohibition',
+          'chronicling-america-hub',
+          'mdnh-mnhs',
+        ],
         strength: 'contemporary-press',
       },
       {

@@ -37,9 +37,11 @@ export function SearchPage() {
       />
       <h1 className="page-title">Search the site</h1>
       <p className="hero__lead" style={{ marginTop: 0 }}>
-        This index covers main routes and recurring research topics (not every footnote string).
-        Prefer the <Link to="/sources">bibliography</Link> and <Link to="/primary-sources">primary sources</Link>{' '}
-        pages for deep retrieval.
+        This index covers main routes, registry rows, and recurring topics (not every footnote string).
+        For a known <code>CitationId</code>, use{' '}
+        <Link to="/lookup">/lookup?id=…</Link> to jump to the matching bibliography anchor. Prefer the{' '}
+        <Link to="/sources">bibliography</Link> and <Link to="/primary-sources">primary sources</Link> pages
+        for deep retrieval.
       </p>
       <label className="search-page__label" htmlFor="site-search-input">
         Search

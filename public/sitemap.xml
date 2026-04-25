@@ -72,4 +72,12 @@
     <loc>https://st-paul-mobsters.vercel.app/search</loc>
     <lastmod>2026-04-21</lastmod>
   </url>
+  <url>
+    <loc>https://st-paul-mobsters.vercel.app/lookup</loc>
+    <lastmod>2026-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://st-paul-mobsters.vercel.app/exemplars</loc>
+    <lastmod>2026-04-21</lastmod>
+  </url>
 </urlset>
