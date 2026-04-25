@@ -17,6 +17,7 @@ import { LicensePage } from './pages/LicensePage'
 import { ReferenceLibraryPage } from './pages/ReferenceLibraryPage'
 import { EditorialPage } from './pages/EditorialPage'
 import { CitePage } from './pages/CitePage'
+import { SearchPage } from './pages/SearchPage'
 
 export default function App() {
   return (
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/license" element={<LicensePage />} />
         <Route path="/editorial" element={<EditorialPage />} />
         <Route path="/cite" element={<CitePage />} />
+        <Route path="/search" element={<SearchPage />} />
         <Route path="/timeline" element={<TimelinePage />} />
         <Route path="/prohibition" element={<ProhibitionPage />} />
         <Route path="/mobsters" element={<MobstersPage />} />

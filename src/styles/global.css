@@ -373,6 +373,155 @@ p {
   gap: 0;
 }
 
+.bibliography-registry__locate {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+  color: var(--color-ink-muted);
+  max-width: min(72ch, 100%);
+}
+
+.figure-card__evidence {
+  font-size: 0.92rem;
+  color: var(--color-ink-muted);
+  margin: 0 0 0.75rem;
+}
+
+.timeline-evidence-legend {
+  font-size: 0.95rem;
+  color: var(--color-ink-muted);
+  max-width: var(--max-content);
+  margin: 0 0 1.25rem;
+}
+
+.timeline__tone {
+  margin: 0 0 0.35rem;
+}
+
+.timeline__tone-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1.35;
+}
+
+.timeline__tone-label--inline {
+  display: inline;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.timeline__tone--record .timeline__tone-label {
+  color: var(--color-ink-muted);
+}
+
+.timeline__tone--synthesis .timeline__tone-label {
+  color: var(--color-gold);
+}
+
+.timeline__tone--debated .timeline__tone-label {
+  color: var(--color-accent);
+}
+
+.repository-workflow {
+  margin-top: 1rem;
+  padding: 1rem 1.1rem;
+  background: rgba(61, 52, 41, 0.04);
+  border-radius: var(--radius);
+  border-left: 3px solid var(--color-gold);
+}
+
+.repository-workflow__heading {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.repository-workflow__sub {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 0.75rem 0 0.35rem;
+  color: var(--color-ink-muted);
+}
+
+.repository-workflow__list {
+  margin: 0 0 0.25rem;
+  padding-left: 1.25rem;
+  font-size: 0.95rem;
+}
+
+.repository-workflow__list li {
+  margin-bottom: 0.35rem;
+}
+
+.research-paths > li {
+  margin-bottom: 1.5rem;
+}
+
+.research-paths__label {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+  margin: 0.75rem 0 0.35rem;
+}
+
+.search-page__hint {
+  font-size: 0.95rem;
+  color: var(--color-ink-muted);
+  margin: 0.5rem 0 0;
+}
+
+.search-page__label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  color: var(--color-ink-muted);
+}
+
+.search-page__input {
+  width: 100%;
+  max-width: 32rem;
+  font: inherit;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(61, 52, 41, 0.25);
+  border-radius: var(--radius);
+  background: var(--color-cream);
+  margin-bottom: 1rem;
+}
+
+.search-page__results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 42rem;
+}
+
+.search-page__results li {
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(61, 52, 41, 0.1);
+}
+
+.search-page__path {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--color-ink-muted);
+  font-family: ui-monospace, monospace;
+  margin-top: 0.2rem;
+}
+
 .section__prose ul {
   margin: 0 0 1rem 1.25rem;
   padding: 0;

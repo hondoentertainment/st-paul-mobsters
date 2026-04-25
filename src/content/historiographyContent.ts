@@ -6,6 +6,24 @@ export const historiographyIntro = {
 
 export const historiographySections: { title: string; paragraphs: string[] }[] = [
   {
+    title: 'Suggested reading order (serious amateur path)',
+    paragraphs: [
+      'Start with contemporaneous Twin Cities newspapers for the week surrounding any claim you care about (MDNH first, Chronicling America for wire context).',
+      'Read Paul Maccabee’s John Dillinger Slept Here as a narrative map, noting where he signals uncertainty; then read one scholarly article or dissertation chapter that explicitly debates “open city” tolerance.',
+      'Add Bryan Burrough’s Public Enemies only after you can sketch the difference between national synthesis and what Minnesota papers said in the same month.',
+      'Return to primary archives to settle any disagreement: court dockets, grand jury reporting, and police blotters beat a polished secondary paragraph.',
+    ],
+  },
+  {
+    title: 'What would change our synthesis',
+    paragraphs: [
+      'A dated police roster, internal memo, or court exhibit showing a formal fee schedule for visiting criminals would sharpen claims about “rules” versus informal tolerance.',
+      'Systematic sampling of arrest releases versus comparable midwestern cities could reset how exceptional St. Paul was.',
+      'New digitization of a long-missing prosecutor’s file on a major kidnapping could rewrite sequence details currently carried by secondary summaries.',
+      'Until such evidence appears, the honest stance is: plausible pattern, uneven documentation, vigorous debate.',
+    ],
+  },
+  {
     title: 'The O’Connor / layover narrative',
     paragraphs: [
       'Paul Maccabee’s John Dillinger Slept Here remains a standard English-language synthesis for St. Paul’s gangster-era corruption and violence. Historians generally accept that St. Paul acquired a reputation as a convenient stop for criminals, and that police and political culture could be permissive.',
@@ -21,7 +39,7 @@ export const historiographySections: { title: string; paragraphs: string[] }[] =
   {
     title: 'Midwest outlaw networks: one map, many stories',
     paragraphs: [
-      'Synthetic works such as Bryan Burrough’s Public Enemies describe a single “crime wave” linking figures who may have met rarely—Dillinger, Floyd, Nelson, the Barker–Karpis circle—across Ohio, Indiana, Illinois, Wisconsin, and Minnesota. The narrative power is real; the organizational unity is often overstated in hindsight.',
+      'Synthetic works such as Bryan Burrough’s Public Enemies describe a single “crime wave” linking figures who may have met rarely—Dillinger, Floyd, Nelson, the Barker–Karpis associates—across Ohio, Indiana, Illinois, Wisconsin, and Minnesota. The narrative power is real; the organizational unity is often overstated in hindsight.',
       'Local studies (for example Maccabee on St. Paul) show how a sanctuary reputation could coexist with federal trials and kidnapping cases that finally eroded police tolerance. Compare national synthesis to dated newspapers when writing who knew whom on which week.',
     ],
   },

@@ -21,6 +21,7 @@ export const changelog: ChangelogEntry[] = [
       'Added Midwest outlaw context: footnoted Mobsters section, new citation IDs (Burrough, interstate banditry), glossary entries, historiography section, Nelson timeline + figure, Nickel & Helmer in /library.',
       'Expanded /figures to 26 profiles (20 new): Olson, Hoover, Purvis, Liggett, Gleckman, Kid Cann, Dillinger circle associates, Kellys, Floyd, Barkers, and others.',
       'Added /editorial and /cite pages; figure filter chips; table-of-contents navigation on long reference pages; self-hosted fonts; Open Graph image and WebPage JSON-LD; footer content-review stamp; example archive deep links on Primary sources.',
+      'Amateur-historian pass: bibliography “Finding detail” notes; repository workflows + topic paths on Primary sources; timeline evidence tones; figure evidence-basis lines; historiography reading order + falsification notes; methodology hedging language; MiniSearch site search at /search; CI citation-ID verification script.',
     ],
   },
 ]

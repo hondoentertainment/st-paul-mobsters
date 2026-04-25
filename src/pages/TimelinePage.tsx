@@ -26,6 +26,15 @@ export function TimelinePage() {
       />
       <h1 className="page-title">Timeline</h1>
       <TableOfContents items={tocItems} />
+      <p className="timeline-evidence-legend">
+        Each timeline entry shows an <strong>evidence tone</strong>:{' '}
+        <span className="timeline__tone-label timeline__tone-label--inline">Record / legal anchor</span>{' '}
+        (verify in primary papers),{' '}
+        <span className="timeline__tone-label timeline__tone-label--inline">Synthesis</span>{' '}
+        (thematic summaries), or{' '}
+        <span className="timeline__tone-label timeline__tone-label--inline">Debated memory</span>{' '}
+        (interpretation or tourism-heavy material—read critically).
+      </p>
       <p className="hero__lead" style={{ marginTop: 0, marginBottom: '1.5rem' }}>
         Below is an expanded narrative chronology—grouped by era—with extra detail on railroads,
         capital politics, Chief O’Connor’s reputation, Prohibition economics, the Bremer case, and

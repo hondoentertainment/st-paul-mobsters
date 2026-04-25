@@ -16,6 +16,19 @@ export function buildSuggestedCitation(path: string): string {
 
 export const citeSections: { title: string; paragraphs: string[] }[] = [
   {
+    title: 'Prefer archives for facts',
+    paragraphs: [
+      'For datable events (kidnappings, shootings, trials), cite the newspaper issue, court file, or archive manuscript you actually read. Cite this site when you are borrowing synthesis, navigation, or bibliography structure—not as a substitute for the underlying record.',
+    ],
+  },
+  {
+    title: 'Stable anchors on long pages',
+    paragraphs: [
+      'Many pages include an “On this page” table of contents; section headings receive URL fragments (for example /methodology#primary-vs-secondary-sources). You may share those links in syllabi; readers should still record the retrieval date because site text can change (see Changelog).',
+      'The master bibliography at /sources lists each registry entry with id cite-{CitationId} (for example /sources#cite-maccabee-dillinger-slept-here) for stable pointers to a single source description.',
+    ],
+  },
+  {
     title: 'Film and television writers’ rooms',
     paragraphs: [
       'Keep a separate production research bible with newspaper PDFs and archive call numbers. Cite this site only for orientation, not as a substitute for clearance on likenesses, music, or underlying rights.',

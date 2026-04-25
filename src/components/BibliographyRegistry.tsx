@@ -17,6 +17,11 @@ export function BibliographyRegistry() {
                 </a>
               </>
             ) : null}
+            {rec.howToLocate ? (
+              <p className="bibliography-registry__locate">
+                <strong>Finding detail:</strong> {rec.howToLocate}
+              </p>
+            ) : null}
           </li>
         )
       })}

@@ -34,9 +34,16 @@ export const methodologySections: { title: string; paragraphs: string[] }[] = [
     ],
   },
   {
+    title: 'Hedged language (“probably,” “possibly,” “unclear”)',
+    paragraphs: [
+      'On footnoted narrative pages, strength-of-evidence badges do part of the work. In prose we still use ordinary English hedges when the record is thin: “probably” signals converging but incomplete secondary agreement; “possibly” flags a hypothesis consistent with some sources but not nailed by a dated primary; “unclear” means conflicting accounts or missing archives.',
+      'If you see a strong factual claim with no footnote, treat it as an oversight and check the Changelog—or compare the same claim on the Timeline, where entries are labeled by how much verification they expect.',
+    ],
+  },
+  {
     title: 'Citing this repository',
     paragraphs: [
-      'See the License page for copyright on site text. For academic papers, cite specific pages and their retrieval date; for film production bibles, keep a log of which newspaper issue supported each script beat. The Changelog records substantive revisions to the site’s claims structure.',
+      'See the License page for copyright on site text and the Cite page for suggested URL formats. For academic papers, cite specific pages and their retrieval date; for film production bibles, keep a log of which newspaper issue supported each script beat. The Changelog records substantive revisions to the site’s claims structure.',
     ],
   },
 ]

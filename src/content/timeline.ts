@@ -4,6 +4,8 @@
  * newspapers, and scholarly works before treating entries as legal or academic proof.
  */
 
+export type TimelineEvidenceTone = 'record' | 'synthesis' | 'debated'
+
 export type TimelineDivider = {
   type: 'divider'
   label: string
@@ -15,6 +17,10 @@ export type TimelineEvent = {
   title: string
   body: string
   bullets?: string[]
+  /**
+   * How to read the entry when verifying: dated/institutional facts vs synthesis vs contested memory.
+   */
+  evidenceTone: TimelineEvidenceTone
 }
 
 export type TimelineEntry = TimelineDivider | TimelineEvent
@@ -32,30 +38,35 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'River traffic tied St. Paul to lumber, furs, and later grain—long before rails defined the interior.',
     ],
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1849',
     title: 'Incorporation as a town',
     body: 'St. Paul incorporated as a town in 1849 (Minnesota remained a territory). Land offices, merchants, and newspapers concentrated power on the bluffs above the Mississippi, setting patterns of downtown commerce and neighborhood growth.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1854',
     title: 'City charter',
     body: 'St. Paul received a city charter as population and commerce accelerated. Government buildings, churches, and schools began to fix a civic identity distinct from still-nascent Minneapolis across the river.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1858',
     title: 'Minnesota statehood; St. Paul as capital',
     body: 'Minnesota entered the Union in 1858 with St. Paul as the capital. Legislatures, lobbying, and printing presses made the city a political as well as commercial hub—an identity it never relinquished even as Minneapolis grew larger in the twentieth century.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1861–1865',
     title: 'Civil War era',
     body: 'Minnesota raised troops and supplies; St. Paul’s newspapers, banks, and transport links tied the young state to national markets. Wartime demand accelerated capital formation and industrial beginnings that would mature after Appomattox.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'divider',
@@ -69,12 +80,14 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'Passenger and freight schedules linked St. Paul to Chicago, the Pacific Northwest, and Canadian border crossings relevant to bootlegging lore.',
     ],
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: 'Late 1800s',
     title: 'Immigration, wards, and saloon culture',
     body: 'Irish, German, Scandinavian, and later eastern European immigrants built ethnic parishes, mutual-aid societies, and neighborhood saloons. Saloons were social clubs as well as drinking places; their regulation became a flashpoint for reformers long before national Prohibition.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
@@ -84,18 +97,21 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'Later schemes (for example, proposals involving Kandiyohi County lands) never unseated St. Paul; Neil B. Thompson and others have traced this long-running political story in Minnesota History.',
     ],
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: 'c. 1890',
     title: 'Minneapolis surpasses St. Paul in population',
     body: 'Federal census counts showed Minneapolis edging ahead as milling and industry drew workers; St. Paul remained the political capital and a wholesale and railroad center. Twin Cities rivalry shaped infrastructure, boosterism, and sometimes police jurisdictions when suspects crossed bridges.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1892–1902',
     title: 'Federal building and courts (today’s Landmark Center)',
     body: 'Construction of the Richardsonian Romanesque federal courthouse and post office anchored federal power in downtown. Trials for mail fraud, liquor tax evasion, and later interstate crime would be heard in federal courtrooms—important when Depression-era cases drew national press.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'divider',
@@ -109,18 +125,21 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'Reformers and journalists later attacked police tolerance as part of broader “open city” criticism.',
     ],
+    evidenceTone: 'debated',
   },
   {
     type: 'event',
     year: '1914–1918',
     title: 'World War I on the home front',
     body: 'Wartime mobilization, rationing, and suspicion of German-language institutions reshaped daily life. The war also advanced federal policing and surveillance habits that would carry into Prohibition enforcement.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1919 (Jan)',
     title: 'Eighteenth Amendment ratified',
     body: 'National constitutional prohibition required state cooperation. Minnesota, like other states, would soon confront the gap between law and widespread drinking culture in urban wards and rural counties alike.',
+    evidenceTone: 'record',
   },
   {
     type: 'divider',
@@ -131,30 +150,35 @@ export const timeline: TimelineEntry[] = [
     year: '1919 (Oct)',
     title: 'Volstead Act framework',
     body: 'Congress passed implementing legislation defining “intoxicating liquors” and federal enforcement powers. The rules set up the legal machinery local police and federal agents would fight over for fourteen years.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1920 (Jan 17)',
     title: 'Prohibition takes effect nationally',
     body: 'The Eighteenth Amendment took effect. Licensed saloons closed; consumption moved to private homes, clubs, and illegal venues. St. Paul’s sandstone river caves—including later commercialized Wabasha Street Caves—feature in tour narratives as storage and speakeasy sites; treat colorful room-by-room stories as mixed evidence.',
+    evidenceTone: 'debated',
   },
   {
     type: 'event',
     year: '1920s',
     title: 'Bootlegging economics',
     body: 'Canadian liquor, Midwestern stills, and urban distribution networks fed persistent demand. Corruption—bribes to inspectors and cops—was national. St. Paul’s rail connections and river geography fit into larger Midwest supply chains.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1920s',
     title: 'Speakeasies, jazz, and enforcement raids',
     body: 'Nightlife adapted: password venues, jazz bands, and dance floors flourished where enforcement lagged. Local newspapers alternated between moralizing editorials and breathless crime coverage, shaping public memory in real time.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1929',
     title: 'Great Crash; Depression deepens',
     body: 'Stock market collapse worsened unemployment and bank stress. Economic desperation intersected with sensational crime coverage as Midwestern banditry drew headlines.',
+    evidenceTone: 'record',
   },
   {
     type: 'divider',
@@ -168,24 +192,28 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'Use contemporaneous newspapers for indictment and trial chronology rather than film summaries alone.',
     ],
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1933 (Mar–Jul)',
     title: 'Dillinger escape and Midwest rampage',
     body: 'John Dillinger’s spring 1933 escape from an Ohio jail and subsequent bank raids made him a national celebrity of crime. He was not a “St. Paul boss,” but Twin Cities histories connect him to the wider Midwest federal manhunt covered breathlessly in the press.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1933–1934',
     title: 'FBI expansion and “public enemy” politics',
     body: 'Federal agents pursued kidnapping and bank-robbery rings; Congress expanded Bureau powers and appropriations. Media spectacle—wanted posters, radio, newsreels—turned bandits into household names while juries sometimes remained skeptical of federal cases.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1934 (Jul 22)',
     title: 'Dillinger killed in Chicago',
     body: 'Federal agents shot John Dillinger outside the Biograph Theater. His death did not end Midwestern violent crime, but it closed a chapter of headline-grabbing bank raids that had trained public attention on the FBI.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
@@ -195,12 +223,14 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'Useful reminder that “Midwest outlaw” networks were often a patchwork of crews and safe houses rather than one syndicate.',
     ],
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1934–1936',
     title: 'Barker–Karpis aftermath',
     body: 'Alvin Karpis and associates remained targets of federal pursuit; the Barker family’s end at Florida in 1935 became part of Bureau lore. Ma Barker’s role was later debated—some historians see FBI mythmaking at work.',
+    evidenceTone: 'debated',
   },
   {
     type: 'divider',
@@ -211,18 +241,21 @@ export const timeline: TimelineEntry[] = [
     year: '1933 (Dec 5)',
     title: 'Repeal of Prohibition',
     body: 'Ratification of the Twenty-first Amendment ended national alcohol prohibition. Minnesota participated in the repeal process; legal breweries and wholesalers gradually re-emerged under state licensing and taxation.',
+    evidenceTone: 'record',
   },
   {
     type: 'event',
     year: '1939–1945',
     title: 'World War II mobilization',
     body: 'Twin Cities factories shifted to war production; labor shortages and migration reshaped neighborhoods. Crime headlines yielded partly to war news, though black markets and policing continued.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
     year: '1950s–1960s',
     title: 'Urban renewal and interstates',
     body: 'Federal highway programs and redevelopment altered downtown streetscapes. Some gangster-era buildings survived; others fell to parking ramps and office towers—changing how later generations encountered the physical past.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'divider',
@@ -233,12 +266,14 @@ export const timeline: TimelineEntry[] = [
     year: '1970s–1990s',
     title: 'Local history revival',
     body: 'Ramsey County Historical Society activities, walking tours, and popular books reintroduced the gangster narrative to wider audiences—sometimes streamlining complexity into tour-friendly stories.',
+    evidenceTone: 'debated',
   },
   {
     type: 'event',
     year: '1995',
     title: 'Paul Maccabee’s synthesis',
     body: 'Publication of John Dillinger Slept Here consolidated many archival strands for general readers. It remains a starting point for St. Paul’s gangster-era corruption narrative even as scholars urge verification against primary sources.',
+    evidenceTone: 'synthesis',
   },
   {
     type: 'event',
@@ -248,5 +283,6 @@ export const timeline: TimelineEntry[] = [
     bullets: [
       'This site’s footnoted pages link to a citation registry; use newspapers for the final word on any scene or date.',
     ],
+    evidenceTone: 'debated',
   },
 ]

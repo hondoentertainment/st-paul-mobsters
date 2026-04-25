@@ -28,6 +28,8 @@ export type Figure = {
   stPaulConnection: string
   summary: string
   filters: FigureFilterId[]
+  /** What kinds of sources support this profile; where legend or press outruns proof */
+  evidenceBasis: string
 }
 
 export const figures: Figure[] = [
@@ -41,6 +43,8 @@ export const figures: Figure[] = [
     summary:
       'O’Connor is remembered for an alleged policy: criminals could stay in St. Paul if they checked in with police and avoided local crimes. Evidence is interpretive rather than a single formal document, but his name anchors the story of St. Paul’s reputation in the early 1900s.',
     filters: ['st-paul'],
+    evidenceBasis:
+      'Secondary synthesis + scattered primary context (police tenure, reform attacks); no single archival “contract” for layover rules—compare Maccabee with week-by-week papers.',
   },
   {
     id: 'dillinger',
@@ -52,6 +56,8 @@ export const figures: Figure[] = [
     summary:
       'Dillinger’s gang robbed banks across the Midwest. His celebrity reflected media spectacle and public fascination with outlaws. He was not a St. Paul “boss”; he was a transient figure in a national crime wave that drew federal resources to Midwestern cities.',
     filters: ['dillinger', 'midwest'],
+    evidenceBasis:
+      'National press, trial records, and FBI files; any Minnesota dateline must be verified in MDNH/Chronicling America, not inferred from films or retrospectives.',
   },
   {
     id: 'karpis',
@@ -63,6 +69,8 @@ export const figures: Figure[] = [
     summary:
       'Karpis was among the last “public enemies” captured by the FBI in the 1930s. His career illustrates how interstate crime networks intersected with local police limits and federal investigation.',
     filters: ['barker', 'kidnapping'],
+    evidenceBasis:
+      'Federal case narratives + press; Upper Midwest “nodes” are easy to overstate—tie specific claims to indictments and dated articles.',
   },
   {
     id: 'baby-face-nelson',
@@ -74,6 +82,8 @@ export const figures: Figure[] = [
     summary:
       'Nelson operated mainly in Illinois and the Great Lakes states, dying after a 1934 shootout with federal agents. Histories emphasize violence and loyalty within small circles rather than a single regional syndicate.',
     filters: ['dillinger', 'midwest'],
+    evidenceBasis:
+      'Illinois/federal reporting and Bureau summaries; St. Paul relevance is contextual (shared press spectacle), not operational control.',
   },
   {
     id: 'ma-barker',
@@ -85,6 +95,8 @@ export const figures: Figure[] = [
     summary:
       'Historians debate Ma Barker’s operational role; the FBI narrative of her as a criminal mastermind has been questioned. She remains a symbol of the gangster-era family outlaw story in American memory.',
     filters: ['barker'],
+    evidenceBasis:
+      'Heavily mediated FBI and press story vs revisionist scholarship—treat operational claims as debated, not settled.',
   },
   {
     id: 'bremer',
@@ -96,6 +108,8 @@ export const figures: Figure[] = [
     summary:
       'Kidnapping for ransom linked organized methods, corruption, and federal pursuit. Such cases accelerated public demand for professionalized policing and illustrated the scale of criminal enterprise in the early 1930s.',
     filters: ['st-paul', 'kidnapping'],
+    evidenceBasis:
+      'Strong contemporaneous press trail for the event; secondary books vary—anchor timeline to newspapers and dockets.',
   },
   {
     id: 'olson',
@@ -107,6 +121,8 @@ export const figures: Figure[] = [
     summary:
       'Olson championed labor and state activism; he died in office. He is not a “gangster” figure, but any serious portrait of the era in the Twin Cities must account for his popularity and the political climate around crime and corruption.',
     filters: ['politics-press'],
+    evidenceBasis:
+      'Political biography, state records, and newspapers—well attested public career distinct from underworld narratives.',
   },
   {
     id: 'hoover',
@@ -118,6 +134,8 @@ export const figures: Figure[] = [
     summary:
       'Hoover shaped the FBI’s self-presentation through “public enemy” rhetoric and media cooperation. Historians treat many early narratives skeptically; use trial records and newspapers alongside Bureau histories.',
     filters: ['fbi'],
+    evidenceBasis:
+      'Agency histories + massive secondary literature; pair any factual claim about Minnesota cases with non-FBI contemporaneous sources.',
   },
   {
     id: 'purvis',
@@ -129,6 +147,8 @@ export const figures: Figure[] = [
     summary:
       'Purvis became famous for high-profile arrests and kills in the “public enemy” period; later accounts debate credit between field agents, informants, and Hoover’s publicity machine.',
     filters: ['fbi'],
+    evidenceBasis:
+      'Bureau memos, memoirs, and press—credit disputes are historiographic; cite specific operations, not legend.',
   },
   {
     id: 'cowley',
@@ -140,6 +160,8 @@ export const figures: Figure[] = [
     summary:
       'Cowley is remembered for violent end-of-trail confrontations in the Dillinger–Nelson era. FBI casualty statistics from such fights became part of Hoover’s justification for Bureau expansion.',
     filters: ['fbi'],
+    evidenceBasis:
+      'Federal reporting and inquest-style coverage; death date/place attested in standard chronologies.',
   },
   {
     id: 'liggett',
@@ -151,6 +173,8 @@ export const figures: Figure[] = [
     summary:
       'His killing drew national attention and debate over who ordered it. Treat popular retellings cautiously; court records and inquests anchor serious work.',
     filters: ['politics-press', 'twin-cities'],
+    evidenceBasis:
+      'Contemporaneous trial/inquest + press; conspiracy theories need explicit labeled evidence.',
   },
   {
     id: 'gleckman',
@@ -162,6 +186,8 @@ export const figures: Figure[] = [
     summary:
       'Scholarship and journalism tie him to sophisticated smuggling and political protection debates. Verify claims in secondary sources against indictments and newspapers.',
     filters: ['twin-cities'],
+    evidenceBasis:
+      'Mix of indictment trail and secondary crime history—verify each bold claim in primary court and press files.',
   },
   {
     id: 'kid-cann',
@@ -173,6 +199,8 @@ export const figures: Figure[] = [
     summary:
       'Convictions and long life span made him a durable symbol of Midwest syndicate gambling and labor racketeering in popular memory; separate hype from documented timelines.',
     filters: ['twin-cities'],
+    evidenceBasis:
+      'Court records + decades of press; popular “boss” framing often outruns specific St. Paul ties.',
   },
   {
     id: 'van-meter',
@@ -184,6 +212,8 @@ export const figures: Figure[] = [
     summary:
       'Van Meter had moved through the same interstate circuits—trains, stolen cars, safe houses—as other Dillinger-era robbers. Biographies cluster him with that circle; confirm details in August 1934 Twin Cities press.',
     filters: ['st-paul', 'dillinger'],
+    evidenceBasis:
+      'Death in St. Paul is the strongest local anchor; other movements via contemporaneous crime coverage.',
   },
   {
     id: 'pierpont',
@@ -195,6 +225,8 @@ export const figures: Figure[] = [
     summary:
       'Pierpont was executed in 1934. Early Dillinger escapes and Indiana prison politics dominate his story; read trial files for specifics rather than movie composites.',
     filters: ['dillinger'],
+    evidenceBasis:
+      'Indiana court/prison records + national press; Minnesota links are narrative context unless dated.',
   },
   {
     id: 'hamilton',
@@ -206,6 +238,8 @@ export const figures: Figure[] = [
     summary:
       'He died of wounds after criminal activity in the Dillinger years. Popular books sometimes blur his timeline; check contemporary newspapers for each alleged appearance.',
     filters: ['dillinger'],
+    evidenceBasis:
+      'Press + FBI summaries; per-city appearances need article-level proof.',
   },
   {
     id: 'frechette',
@@ -217,6 +251,8 @@ export const figures: Figure[] = [
     summary:
       'Indicted for harboring, imprisoned, then released into obscurity until late-life interviews. Treat memory decades after events as testimony, not sole proof.',
     filters: ['dillinger'],
+    evidenceBasis:
+      'Court record for harboring + late oral/memoir material—weak alone for precise itineraries.',
   },
   {
     id: 'murray',
@@ -228,6 +264,8 @@ export const figures: Figure[] = [
     summary:
       'Historians of gender and crime use figures like Murray to show how women’s roles in outlaw publicity were exaggerated. Verify particulars in court documents.',
     filters: ['dillinger', 'midwest'],
+    evidenceBasis:
+      'Court files + sensational press—nickname and exploits partly constructed by editors.',
   },
   {
     id: 'carroll',
@@ -239,6 +277,8 @@ export const figures: Figure[] = [
     summary:
       'Killed in 1934. Like other secondary associates, he illustrates fluid membership in short-lived robbery cliques rather than stable “families.”',
     filters: ['dillinger'],
+    evidenceBasis:
+      'Wire and crime beat reporting; tie membership claims to dated indictments where possible.',
   },
   {
     id: 'floyd',
@@ -250,6 +290,8 @@ export const figures: Figure[] = [
     summary:
       'Killed in Ohio in 1934. Mythology—Robin Hood tropes—often outruns documentation; use FBI files and regional press with caution.',
     filters: ['midwest'],
+    evidenceBasis:
+      'Regional press + federal files; Robin Hood layer is largely memory and pulp—label separately.',
   },
   {
     id: 'machine-gun-kelly',
@@ -261,6 +303,8 @@ export const figures: Figure[] = [
     summary:
       'Captured in 1933; long prison life afterward. The “Machine Gun” nickname was partly press invention; check chronologies against indictments.',
     filters: ['kidnapping', 'midwest'],
+    evidenceBasis:
+      'Federal kidnapping case record + press spectacle—nickname partly constructed.',
   },
   {
     id: 'kathryn-kelly',
@@ -272,6 +316,8 @@ export const figures: Figure[] = [
     summary:
       'Prosecutors portrayed her as instigator; defenses disputed facts. Later life included prison and parole; gendered tropes abound in coverage—read critically.',
     filters: ['kidnapping'],
+    evidenceBasis:
+      'Trial transcripts and press framing vs later reassessments—operational role contested.',
   },
   {
     id: 'bailey',
@@ -283,6 +329,8 @@ export const figures: Figure[] = [
     summary:
       'Survived into old age in prison and parole. Useful for writers tracing continuity from 1920s banditry to Depression “public enemy” fame.',
     filters: ['midwest'],
+    evidenceBasis:
+      'Long arc of convictions and memoir-era interviews; specific St. Paul stops need article proof.',
   },
   {
     id: 'miller',
@@ -294,6 +342,8 @@ export const figures: Figure[] = [
     summary:
       'Died violently in 1933 amid disputed circumstances. Early FBI narratives and local police stories conflict; treat as heavily mythologized.',
     filters: ['midwest'],
+    evidenceBasis:
+      'Conflicting police/FBI vs local accounts—flag as mixed evidence for death narrative details.',
   },
   {
     id: 'fred-barker',
@@ -305,6 +355,8 @@ export const figures: Figure[] = [
     summary:
       'Killed with his mother at Lake Weir, Florida, in 1935. FBI accounts emphasize family conspiracy; independent historians question Ma Barker’s operational role.',
     filters: ['barker'],
+    evidenceBasis:
+      'Florida endgame well documented; Upper Midwest hideout stories vary in quality—verify each.',
   },
   {
     id: 'doc-barker',
@@ -316,5 +368,7 @@ export const figures: Figure[] = [
     summary:
       'Killed attempting escape from Alcatraz in 1939. Useful for tracing federal prison policy and sensational press alongside Twin Cities cases.',
     filters: ['barker', 'kidnapping'],
+    evidenceBasis:
+      'Federal prison and trial records + press; Minnesota link is narrative context unless sourced.',
   },
 ]

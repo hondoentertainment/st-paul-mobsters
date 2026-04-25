@@ -16,6 +16,9 @@ export function FigureCard({ figure }: FigureCardProps) {
         {figure.name}
       </h3>
       <p className="figure-card__meta">{figure.dates}</p>
+      <p className="figure-card__evidence">
+        <strong>Evidence basis:</strong> {figure.evidenceBasis}
+      </p>
       <p>{figure.summary}</p>
       <p>
         <strong>St. Paul connection:</strong> {figure.stPaulConnection}

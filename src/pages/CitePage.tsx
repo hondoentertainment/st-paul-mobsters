@@ -44,6 +44,26 @@ export function CitePage() {
               <code>{buildSuggestedCitation('/mobsters')}</code>
             </pre>
           </li>
+          <li>
+            <strong>Prohibition (narrative)</strong>
+            <pre className="cite-block">
+              <code>{buildSuggestedCitation('/prohibition')}</code>
+            </pre>
+          </li>
+          <li>
+            <strong>Historiography</strong>
+            <pre className="cite-block">
+              <code>{buildSuggestedCitation('/historiography')}</code>
+            </pre>
+          </li>
+          <li>
+            <strong>Master bibliography (one registry row)</strong>
+            <p>
+              Stable fragment IDs use the pattern <code>cite-</code> plus the registry key, for
+              example <code>/sources#cite-maccabee-dillinger-slept-here</code>. Pair the fragment
+              with your usual web citation format and access date.
+            </p>
+          </li>
         </ul>
       </Section>
       {citeSections.map((sec) => (

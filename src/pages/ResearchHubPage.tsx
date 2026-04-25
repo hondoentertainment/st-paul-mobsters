@@ -4,6 +4,11 @@ import { siteAttribution } from '../content/citingThisSite'
 
 const tools = [
   {
+    to: '/search',
+    title: 'Search',
+    blurb: 'MiniSearch over curated page topics and keywords (expand searchIndexData as the site grows).',
+  },
+  {
     to: '/editorial',
     title: 'Editorial standards',
     blurb: 'Evidence tiers, corrections policy, and how dramatic works relate to historical sources.',
