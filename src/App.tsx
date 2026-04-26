@@ -1,8 +1,9 @@
 import { lazy, Suspense } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { Layout } from './components/Layout'
-
-const Home = lazy(() => import('./pages/Home').then((m) => ({ default: m.Home })))
+// Home is eagerly loaded so the first paint does not depend on a separate chunk request
+// (a missing or cached-stale async chunk is a common cause of blank or error pages on deploy).
+import { Home } from './pages/Home'
 const ResearchHubPage = lazy(() =>
   import('./pages/ResearchHubPage').then((m) => ({ default: m.ResearchHubPage })),
 )

@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+  // Explicit root base avoids wrong chunk URLs on hosts that set a subpath in rare misconfigs.
+  base: '/',
   appType: 'spa',
   plugins: [
     react(),
@@ -26,5 +28,11 @@ export default defineConfig({
   build: {
     // Safer on CDNs; avoids overly modern syntax surprises in some browsers.
     target: 'es2020',
+    rollupOptions: {
+      output: {
+        // Single app bundle: no extra /assets/* chunk requests (avoids stale index after deploys).
+        inlineDynamicImports: true,
+      },
+    },
   },
 })
